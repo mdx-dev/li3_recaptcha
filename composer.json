@@ -1,0 +1,20 @@
+{
+	"name": "mdx-dev/li3_recaptcha",
+	"type": "li3-libraries",
+	"description": "Plugin that enable easy interactions with Googles reCAPTCHA API from Lithium PHP framework",
+	"keywords": ["recaptcha", "php", "captcha", "lithium", "li3"],
+	"homepage": "https://github.com/mdx-dev/li3_recaptcha",
+	"license": "OSS",
+	"authors": [
+		{
+			"name": "Djordje Kovacevic",
+			"homepage": "https://github.com/djordje"
+		}
+	],
+
+	"require": {
+		"php": ">=5.3",
+		"joseym/li3_installer": "master"
+	}
+
+}
