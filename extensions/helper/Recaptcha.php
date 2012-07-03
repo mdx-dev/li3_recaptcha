@@ -28,7 +28,7 @@ class Recaptcha extends \lithium\template\Helper {
 	protected $_strings = array(
 		'challenge' => '
 			<script type="text/javascript">
-				var RecaptchaOptions = {theme: "white"}
+				var RecaptchaOptions = {theme: "{:theme}"}
 			</script>
 			<script type="text/javascript" src="{:src}/challenge?k={:publickey}{:errorpart}"></script>
 			<noscript>
@@ -60,7 +60,8 @@ class Recaptcha extends \lithium\template\Helper {
 		return $this->_render(__METHOD__, 'challenge', array(
 			'src' => $src,
 			'publickey' => $config['public'],
-			'errorpart' => $errorpart
+			'errorpart' => $errorpart,
+			'theme' => (isset($config['theme']) ? $config['theme'] : 'red')
 		));
 	}
 	
