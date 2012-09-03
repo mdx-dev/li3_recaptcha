@@ -5,16 +5,15 @@
 	"keywords": ["recaptcha", "php", "captcha", "lithium", "li3"],
 	"homepage": "https://github.com/mdx-dev/li3_recaptcha",
 	"license": "OSS",
+	"minimum-stability": "dev",
 	"authors": [
 		{
 			"name": "Djordje Kovacevic",
 			"homepage": "https://github.com/djordje"
 		}
 	],
-
 	"require": {
-		"php": ">=5.3",
-		"joseym/li3_installer": "master"
+		"php": ">=5.3"
 	}
 
 }
